@@ -1,3 +1,4 @@
+<?php
 // CONFIG
 $db_host = 'localhost';
 $db_user = 'root';
