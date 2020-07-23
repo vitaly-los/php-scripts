@@ -1,7 +1,7 @@
 <?php
 /*
 ** Select all links from Database
-**
+** site http://easy-code.ru/lesson/advanced-curl-php
 */
 // CONFIG
 $db_host = 'localhost';
