@@ -1,4 +1,22 @@
 <?php
+
+/*
+** Get HTTP request code
+** site http://easy-code.ru/lesson/advanced-curl-php
+*/
+
+$ch = curl_init('https://google.com');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, false);
+curl_exec($ch);
+$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+echo $http_code;
+
+======================================================================
+
+
 /*
 ** Select all links from Database
 ** site http://easy-code.ru/lesson/advanced-curl-php
