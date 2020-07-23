@@ -1,10 +1,14 @@
 <?php
+/*
+** Select all links from Database
+**
+*/
 // CONFIG
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
 $db_name = 'wordpress';
-$excluded_domains = array('localhost', 'easy-code.ru');
+$excluded_domains = array('localhost', 'mysite.ua');
 $max_connections = 10;
  
 $url_list = array();
@@ -53,6 +57,10 @@ if (!$url_list) {
     die('No URL to check');
 }
 
+/*
+** Check for all links
+**
+*/
 
 $mh = curl_multi_init();
  
