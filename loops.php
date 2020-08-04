@@ -35,3 +35,17 @@ for($i = 1; $i<=4; $i++){
     echo "<br>";
 }
 ?>
+<?php
+for($i = 1; $i<=4; $i++){
+    for($j=4; $j>=$i; $j--){
+        echo "  ";
+    }
+    for($k=1; $k<=$i; $k++){
+        echo $k;
+    }
+    for($m=($i-1); $m>=1; $m--){
+        echo $m;
+    }
+    echo "<br>";
+}
+?>
